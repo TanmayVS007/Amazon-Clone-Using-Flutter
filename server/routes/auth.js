@@ -1,7 +1,7 @@
-const express = require("express");
-const User = require("../models/user");
+import express from "express"
+import User from "../models/user.js";
+import bcryptjs from "bcryptjs"
 const authRouter = express.Router();
-const bcryptjs = require('bcryptjs');
 
 authRouter.post("/api/signup", async (req, res) => {
     try {
@@ -23,4 +23,4 @@ authRouter.post("/api/signup", async (req, res) => {
     }
 });
 
-module.exports = authRouter;
+export default authRouter

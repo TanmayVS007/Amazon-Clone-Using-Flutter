@@ -1,9 +1,9 @@
 // importing from packages
-const express = require('express');
-const mongoose = require('mongoose');
-
+import express from "express"
+import mongoose from "mongoose";
+import authRouter from "../server/routes/auth.js"
 // imports from other files
-const authRouter = require("./routes/auth");
+// const authRouter = require("./routes/auth");
 
 // Initialization
 const PORT = 3000
