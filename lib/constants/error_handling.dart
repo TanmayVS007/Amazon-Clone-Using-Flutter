@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:amazon_clone_application/constants/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -19,7 +18,7 @@ void httpErrorHandle({
     case 500:
       showSnackBar(context, jsonDecode(response.body)["error"]);
       break;
-    default: 
-    showSnackBar(context, response.body);
+    default:
+      showSnackBar(context, response.body);
   }
 }
