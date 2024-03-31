@@ -32,13 +32,14 @@ class User {
 
   factory User.fromMap(Map<String, dynamic> map) {
     return User(
-        id: map['_id'] ?? "",
-        name: map['name'] ?? "",
-        password: map['password'] ?? "",
-        address: map['address'] ?? "",
-        type: map['type'] ?? "",
-        email: map['email'] ?? "",
-        token: map['token'] ?? "");
+      id: map['_id'] ?? "",
+      name: map['name'] ?? "",
+      password: map['password'] ?? "",
+      address: map['address'] ?? "",
+      type: map['type'] ?? "",
+      email: map['email'] ?? "",
+      token: map['token'] ?? "",
+    );
   }
 
   String toJson() => json.encode(toMap());
